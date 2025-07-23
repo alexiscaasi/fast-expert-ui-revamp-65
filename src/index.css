@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern FastExpert Design System - Professional Real Estate Platform */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Modern Blues & Professional Palette */
+    --primary: 217 91% 60%; /* Vibrant blue for CTAs and key elements */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 84% 55%;
+    --primary-soft: 217 91% 95%; /* Light blue backgrounds */
+    
+    /* Secondary & Accent Colors */
+    --secondary: 215 25% 27%; /* Deep professional gray */
+    --secondary-foreground: 0 0% 100%;
+    --accent: 45 100% 65%; /* Premium gold for ratings/badges */
+    --accent-foreground: 215 25% 27%;
+    
+    /* Background & Surface Colors */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+    --surface: 217 33% 97%; /* Subtle blue-tinted surface */
+    --surface-elevated: 0 0% 100%;
+    
+    /* Component Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    
+    /* Interactive States */
+    --muted: 217 33% 95%;
+    --muted-foreground: 215 16% 47%;
+    --border: 217 33% 90%;
+    --input: 217 33% 90%;
+    --ring: 217 91% 60%;
+    
+    /* Semantic Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 84% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 84% 45%) 50%, hsl(200 85% 50%) 100%);
+    --gradient-surface: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(217 33% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(217 20% 99%) 100%);
+    
+    /* Shadows - Sophisticated depth */
+    --shadow-sm: 0 1px 2px 0 hsl(217 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(217 25% 15% / 0.1), 0 2px 4px -2px hsl(217 25% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(217 25% 15% / 0.1), 0 4px 6px -4px hsl(217 25% 15% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(217 25% 15% / 0.1), 0 8px 10px -6px hsl(217 25% 15% / 0.1);
+    --shadow-glow: 0 0 0 1px hsl(217 91% 60% / 0.05), 0 0 40px hsl(217 91% 60% / 0.2);
+    
+    /* Animation & Transitions */
+    --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode support - Professional dark theme for FastExpert */
+    --primary: 217 91% 65%;
+    --primary-foreground: 215 25% 15%;
+    --primary-hover: 217 84% 60%;
+    --primary-soft: 217 25% 15%;
+    
+    --secondary: 217 25% 85%;
+    --secondary-foreground: 215 25% 15%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 215 25% 15%;
+    
+    --background: 215 25% 12%;
+    --foreground: 217 25% 95%;
+    --surface: 215 25% 15%;
+    --surface-elevated: 215 25% 18%;
+    
+    --card: 215 25% 15%;
+    --card-foreground: 217 25% 95%;
+    --popover: 215 25% 15%;
+    --popover-foreground: 217 25% 95%;
+    
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 16% 65%;
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 217 91% 65%;
+    
+    --sidebar-background: 215 25% 10%;
+    --sidebar-foreground: 217 25% 90%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 215 25% 15%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 217 25% 90%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 217 91% 65%;
+  }
+}
+
+/* Custom Utility Classes for FastExpert */
+@layer utilities {
+  /* Interactive Elements */
+  .interactive-lift {
+    @apply transition-all duration-300 ease-smooth hover:scale-105 hover:shadow-lg;
+  }
+  
+  .interactive-glow {
+    @apply transition-all duration-300 ease-smooth hover:shadow-glow;
+  }
+  
+  .interactive-slide {
+    @apply transition-transform duration-300 ease-smooth hover:translate-y-[-2px];
+  }
+  
+  /* Text Effects */
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+  
+  .text-shimmer {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] bg-clip-text text-transparent animate-pulse;
+  }
+  
+  /* Glass Effects */
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-sm border border-white/40 shadow-lg;
+  }
+  
+  /* Modern Buttons */
+  .btn-primary {
+    @apply bg-gradient-primary text-primary-foreground border-0 shadow-md hover:shadow-lg transition-all duration-300 ease-smooth hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground border border-border hover:bg-secondary/90 transition-all duration-300 ease-smooth;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-primary border border-primary/20 hover:bg-primary-soft hover:border-primary transition-all duration-300 ease-smooth;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
