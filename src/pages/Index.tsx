@@ -10,7 +10,8 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 //import { NeighborhoodInsights } from "@/components/NeighborhoodInsights";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { AIChatAssistant } from "@/components/AIChatAssistant";
+// import { AIChatAssistant } from "@/components/AIChatAssistant";
+import AIChatAssistant from "@/components/AIChatAssistant";
 import { TopAgentsShowcase } from "@/components/TopAgentsShowcase";
 
 const Index = () => {
