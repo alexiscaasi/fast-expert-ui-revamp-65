@@ -49,7 +49,7 @@ export const AIFeatures = () => {
       title: "Smart Recommendations",
       description: "Personalized suggestions for professionals and services based on your location and transaction needs",
       benefits: ["Personalized matches", "Service recommendations", "Trust score analysis"],
-      color: "warning"
+      color: "accent"
     },
     {
       icon: BarChart3,
@@ -103,7 +103,7 @@ export const AIFeatures = () => {
           })}
         </div>
 
-        {/* AI Demo Section */}
+        {/* AI Demo Section
         <Card className="p-8 bg-gradient-primary text-white">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -171,7 +171,7 @@ export const AIFeatures = () => {
               </Card>
             </div>
           </div>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );

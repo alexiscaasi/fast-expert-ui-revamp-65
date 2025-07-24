@@ -40,7 +40,7 @@ export const AffordabilityTool = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <Badge className="bg-success/10 text-success border-success/20 mb-4">
+          <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">
             <Calculator className="w-4 h-4 mr-2" />
             Affordability Calculator
           </Badge>

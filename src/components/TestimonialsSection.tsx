@@ -80,7 +80,7 @@ export const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge className="bg-success/10 text-success border-success/20 mb-4">
+          <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">
             <ThumbsUp className="w-4 h-4 mr-2" />
             Client Success Stories
           </Badge>
@@ -93,8 +93,8 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {stats.filter(stat => stat.label !== "Above Market Results").map((stat, index) => (
             <Card key={index} className="p-6 text-center bg-gradient-card">
               <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
               <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -153,18 +153,18 @@ export const TestimonialsSection = () => {
 
               {/* Transaction Details */}
               <div className="mt-4 pt-4 border-t border-border">
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-foreground">
                   <div>
                     <span className="text-muted-foreground">Agent: </span>
-                    <span className="font-medium text-foreground">{testimonial.agentName}</span>
+                    <span className="font-medium">{testimonial.agentName}</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground">Timeframe: </span>
-                    <span className="font-medium text-foreground">{testimonial.timeframe}</span>
+                    <span className="font-medium">{testimonial.timeframe}</span>
                   </div>
-                  <div className="col-span-2">
+                  <div>
                     <span className="text-muted-foreground">Property: </span>
-                    <span className="font-medium text-foreground">{testimonial.propertyType}</span>
+                    <span className="font-medium">{testimonial.propertyType}</span>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Trust Indicators */}
+        {/* Trust Indicators
         <Card className="p-8 bg-gradient-primary text-white text-center">
           <div className="max-w-3xl mx-auto">
             <div className="flex justify-center mb-4">
@@ -186,7 +186,7 @@ export const TestimonialsSection = () => {
               All reviews are verified through our secure platform and represent real client experiences
             </div>
           </div>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );

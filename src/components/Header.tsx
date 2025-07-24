@@ -16,14 +16,14 @@ export const Header = () => {
               <span className="text-white font-bold text-sm">FE</span>
             </div>
             <span className="text-xl font-bold text-foreground">FastExpert</span>
-            <Badge variant="secondary" className="bg-accent/20 text-accent-foreground text-xs">
+            {/* <Badge variant="secondary" className="bg-accent/20 text-accent-foreground text-xs">
               AI-Powered
-            </Badge>
+            </Badge> */}
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary cursor-pointer transition-colors">
+            {/* <div className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary cursor-pointer transition-colors">
               <User className="w-4 h-4" />
               <span>Find Agents</span>
             </div>
@@ -38,7 +38,7 @@ export const Header = () => {
             <div className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary cursor-pointer transition-colors">
               <Phone className="w-4 h-4" />
               <span>Market Stats</span>
-            </div>
+            </div> */}
           </nav>
 
           {/* CTA Buttons */}
@@ -47,14 +47,14 @@ export const Header = () => {
               Sign In
             </Button>
             <div className="flex gap-2">
-              <Button variant="outline" size="sm">
+              {/* <Button variant="outline" size="sm">
                 Join as Agent
               </Button>
               <Button variant="outline" size="sm">
                 Join as Lender
-              </Button>
+              </Button> */}
               <Button size="sm" className="btn-primary">
-                Join as Vendor
+                Join as Agent
               </Button>
             </div>
           </div>
